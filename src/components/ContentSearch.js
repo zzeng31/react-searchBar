@@ -6,10 +6,10 @@ import styles from "./ContentSearch.module.css";
 
 const CourseInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
-
+  const commonWords = ["and", "or", "the", "of"];
   const [isValid, setIsValid] = useState(true);
   const [filter, setFilter] = useState([]);
-  const [match, setMatch] = useState(0);
+  // const [match, setMatch] = useState(0);
   const [search, setSearch] = useState("");
   const inputChangeHandler = (event) => {
     setSearch(event.target.value);
@@ -23,51 +23,47 @@ const CourseInput = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
-    const searchArr = search.split(" ").filter((val) => val.length > 0);
+    const searchArr = search
+      .split(" ")
+      .filter(
+        (val) =>
+          val.length > 0 && !commonWords.some((c) => c === val.toLowerCase())
+      );
     console.log("search:", searchArr);
 
+    // const filteredSearch = props.items.filter((value) => {
+    //   return (
+    //     searchArr.some((s) => {
+    //       return value.title.toLowerCase().includes(s.toLowerCase());
+    //     }) ||
+    //     searchArr.some((s) => {
+    //       return value.content.some((sub) => {
+    //         return sub.subTitle.toLowerCase().includes(s.toLowerCase());
+    //       });
+    //     }) ||
+    //     searchArr.some((s) => {
+    //       return value.content.some((sub) => {
+    //         return sub.subContent.some((subContent) => {
+    //           return subContent.toLowerCase().includes(s.toLowerCase());
+    //         });
+    //       });
+    //     })
+    //   );
+    // });
     const filteredSearch = props.items.filter((value) => {
-      return (
-        searchArr.some((s) => {
-          // console.log("s:" + s);
-          // console.log(
-          //   "title match:",
-          //   value.title.toLowerCase().includes(s.toLowerCase())
-          // );
-          return value.title.toLowerCase().includes(s.toLowerCase());
-        }) ||
-        searchArr.some((s) => {
-          return value.content.some((sub) => {
-            // console.log("subTitle:", sub.subTitle.toLowerCase());
-            // console.log(
-            //   "subTitle match:",
-            //   sub.subTitle.toLowerCase().includes(s.toLowerCase())
-            // );
+      return searchArr.some((s) => {
+        return (
+          value.title.toLowerCase().includes(s.toLowerCase()) ||
+          value.content.some((sub) => {
             return sub.subTitle.toLowerCase().includes(s.toLowerCase());
-          });
-        }) ||
-        searchArr.some((s) => {
-          return value.content.some((sub) => {
+          }) ||
+          value.content.some((sub) => {
             return sub.subContent.some((subContent) => {
-              // console.log("subContent:", subContent);
-              // console.log(
-              //   "subContent Matched:",
-              //   subContent.toLowerCase().includes(s.toLowerCase())
-              // );
               return subContent.toLowerCase().includes(s.toLowerCase());
             });
-          });
-        })
-      );
-
-      // value.content.some((val) =>
-      //   val.subTitle.toLowerCase().includes(search.toLowerCase())
-      // ) ||
-      // value.content.forEach((val) => {
-      //   val.subContent.some((sub) => {
-      //     sub.toLowerCase().includes(search.toLowerCase());
-      //   });
-      // })
+          })
+        );
+      });
     });
     setFilter(filteredSearch);
     props.setDataContent(filteredSearch);

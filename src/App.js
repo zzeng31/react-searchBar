@@ -13,7 +13,7 @@ const App = () => {
 
   let content = <p style={{ textAlign: "center" }}>No Information found</p>;
 
-  if (dataContent.length > 0) {
+  if (dataContent.length > 0 && searchWord.length > 0) {
     content = (
       <ContentList
         items={dataContent}
@@ -31,7 +31,6 @@ const App = () => {
           setDataContent={setDataContent}
           setSearchWord={setSearchWord}
         />
-
       </section>
 
       <section id="goals">{content}</section>
