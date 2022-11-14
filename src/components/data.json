@@ -1,0 +1,1063 @@
+[
+  {
+    "id": 1,
+    "ppt": "Scrum Best Practices-slide-4",
+    "title": "The Definition(s) of Done (DoD)",
+    "content": [
+      {
+        "subTitle": "Agile emphasis",
+
+        "subContent": [
+          "deliver actual functionality",
+          "Avoid waste Or: maximize work not done"
+        ]
+      },
+      {
+        "subTitle": "Strict definition of progress",
+
+        "subContent": [
+          "User stories: Delivered story points",
+          "Tasks: work remaining in (ideal) working time"
+        ]
+      },
+      {
+        "subTitle": "Needed:",
+
+        "subContent": [
+          "Strict definition of Completion: Definition of Done: For user stories and sprint tasks"
+        ]
+      },
+      {
+        "subTitle": "Each team creates its own definitions",
+        "subContent": []
+      },
+      {
+        "subTitle": "Important: Apply Definition of Done consistently",
+        "subContent": []
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 2,
+    "ppt": "Scrum Best Practices-slide-5",
+    "title": "Definition of Done (Tasks) – Sample Check List",
+    "content": [
+      {
+        "subTitle": "Did you build the thing right?",
+
+        "subContent": [
+          "Code checked into repository (Github)",
+          "Code reviewed for standards compliance",
+          "Code reviewed by team member or Walk-through performed",
+          "External/Public API documented",
+          "Unit test definition complete",
+          "Unit tests run without error",
+          "Non-functional tests (e.g. usability, performance) passed",
+          "Regression tests run without error",
+          "Static code analysis performed and passed",
+          "Test coverage measured and achieved"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 3,
+    "ppt": "Scrum Best Practices-slide-6",
+    "title": "Acceptance Criteria (1)",
+    "content": [
+      {
+        "subTitle": "Did you build the right thing?(from user/customer perspective)",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Acceptance Criteria",
+
+        "subContent": [
+          "Objective criteria to determine whether a user story has been fully and correctly implemented",
+          "Basis for functional testing of completed user stories",
+          "Basis for acceptance test before product release",
+          "Detailed requirements",
+          "Basis for BDD/ATDD: ",
+          "BDD: Behavior Driven Development",
+          "ATDD: Acceptance Test Driven Development"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 4,
+    "ppt": "Scrum Best Practices-slide-7",
+    "title": "Acceptance Criteria (2)",
+    "content": [
+      {
+        "subTitle": "User stories in Product Backlog",
+
+        "subContent": [
+          "User story: an invitation for a conversation",
+          "Product backlog: a wish list, shopping list,Anyone can add to it"
+        ]
+      },
+      {
+        "subTitle": "User stories in Sprint Backlog",
+
+        "subContent": [
+          "User story: high-level description of required functionality",
+          "Sprint backlog: team commitment to deliver software that satisfies the requirements"
+        ]
+      },
+      {
+        "subTitle": "Acceptance criteria",
+
+        "subContent": [
+          "How to test that the delivered software satisfies a requirement"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 5,
+    "ppt": "Scrum Best Practices-slide-8",
+    "title": "Acceptance Criteria (3)",
+    "content": [
+      {
+        "subTitle": "Sprint Planning",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "For each user story in Sprint backlog",
+
+        "subContent": [
+          "Conversation of Product Owner with team",
+          "Work out details of user story",
+          "Agree on acceptance criteria"
+        ]
+      },
+      {
+        "subTitle": "Record acceptance criteria for each user story",
+
+        "subContent": ["E.g. on back of card/post-it for user story"]
+      },
+      {
+        "subTitle": "User story: View  “miles",
+
+        "subContent": [
+          "As a frequent flier, I want to see my current “miles”, so that I can plan for free tickets."
+        ]
+      },
+      {
+        "subTitle": "Acceptance Criteria: View “miles”",
+
+        "subContent": [
+          "View earned miles as of last statement",
+          " View pending miles (since last statement)",
+          "View total miles (earned + pending)",
+          "View miles within 30 days of expiration"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 6,
+    "ppt": "Scrum Best Practices-slide-9",
+    "title": "Definition of Done (User Story) – Sample Check List",
+    "content": [
+      {
+        "subTitle": "Did you build the right thing?(from user perspective)",
+
+        "subContent": [
+          "All tasks for user story are done",
+          "Tests performed and passed for all acceptance criteria",
+          "User documentation/Help functions complete",
+          "Inspected and accepted by Product Owner"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 7,
+    "ppt": "Scrum Best Practices-slide-10",
+    "title": "Team Working Agreements",
+    "content": [
+      {
+        "subTitle": "Logistics",
+
+        "subContent": [
+          "Work room",
+          "Meeting times",
+          "Project repository: Location&&Organization",
+          "Communication channels"
+        ]
+      },
+      {
+        "subTitle": "Development environment",
+
+        "subContent": ["Platform", "IDE", "Coding style/standards"]
+      },
+      {
+        "subTitle": "Work (Process) Patterns",
+
+        "subContent": [
+          "Definition(s) of Done",
+          "Team collaboration",
+          "Collaboration with experts",
+          "(SME: subject matter experts)",
+          "Areas of responsibility",
+          "Work hand-off/integration"
+        ]
+      },
+      {
+        "subTitle": "Product Design Patterns",
+
+        "subContent": [
+          "UX/UI look and feel",
+          "Product architecture",
+          "Common approach to common problems",
+          "Error handling"
+        ]
+      }
+    ],
+    "image": []
+  },
+  {
+    "id": 8,
+    "ppt": "Scrum Best Practices-slide-11",
+    "title": "Avoid Waste: Hidden Cost of Defects",
+    "content": [
+      {
+        "subTitle": "Leaving problems unresolved increases risk of failure",
+
+        "subContent": [
+          "Defect build up: risk of extra cost (effort, time, money)",
+          "Technical debt: steep interest rate; may be hard to pay off"
+        ]
+      },
+      {
+        "subTitle": "Minimize time between defect insertion and defect detection and correction",
+
+        "subContent": ["Cost increases exponentially with time elapsed"]
+      }
+    ],
+    "image": [{ "url": "/1.png" }]
+  },
+  {
+    "id": 9,
+    "ppt": "Scrum Best Practices-slide-12",
+    "title": "Higher Quality 🡪 Faster Development",
+    "content": [
+      {
+        "subTitle": "Eliminating more defects earlier makes progress faster",
+
+        "subContent": [
+          "Reduces effort, schedule, cost",
+          "Up to a point (about 95%)"
+        ]
+      }
+    ],
+
+    "image": [{ "url": "/2.png" }]
+  },
+  {
+    "id": 10,
+    "ppt": "Scrum Best Practices-slide-13",
+    "title": "Product Increment Strategies",
+    "content": [
+      {
+        "subTitle": "Layer by layer  or Slice by slice ???",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Conventional approach (not necessarily wrong)",
+
+        "subContent": [
+          "Layer by layer Example: Making a pizza",
+          "Make the dough",
+          "Spread on tomato sauce",
+          "Add vegetables",
+          "Add meats",
+          "Bake",
+          "Sprinkle on extra cheese and/or hot pepper flakes"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 11,
+    "ppt": "Scrum Best Practices-slide-14",
+    "title": "Slices and Layers",
+    "content": [],
+
+    "image": [{ "url": "/3.png" }]
+  },
+  {
+    "id": 11,
+    "ppt": "Scrum Best Practices-slide-15",
+    "title": "Product Increments: Vertical Slices",
+    "content": [
+      {
+        "subTitle": "Start with",
+
+        "subContent": [
+          "Releasable system",
+          "Minimal functionality:",
+          "Establishes feasibility",
+          "Gives a first taste"
+        ]
+      },
+      {
+        "subTitle": "Add increments",
+
+        "subContent": [
+          "Releasable system",
+          "Increased functionality",
+          "All layers expand as needed"
+        ]
+      },
+      {
+        "subTitle": "Vertical slice (“Sashimi”) increments",
+
+        "subContent": ["practice essential to successful Scrum projects"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 12,
+    "ppt": "Scrum Best Practices-slide-16",
+    "title": "Splitting User Stories",
+    "content": [
+      {
+        "subTitle": "User stories need to fit within sprint",
+
+        "subContent": [
+          "All work for a user story completed within single sprint"
+        ]
+      },
+      {
+        "subTitle": "Guideline (Rule of Thumb):",
+
+        "subContent": [
+          "“size” of user story no more than 50% of sprint Because our estimates are easily off by factor of 2"
+        ]
+      },
+      {
+        "subTitle": "What to do with large user stories, epics? ",
+
+        "subContent": ["Decompose into multiple stories"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 13,
+    "ppt": "Scrum Best Practices-slide-17",
+    "title": "Split User Stories by Workflow",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Create an account"]
+      },
+
+      {
+        "subTitle": "Split user story by user’s workflow ",
+
+        "subContent": [
+          "Supply personal data",
+          "Choose account type",
+          "Specify account options (e.g., overdraft protection)"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 14,
+    "ppt": "Scrum Best Practices-slide-18",
+    "title": "Split User Stories by Type/Alternative",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Create an account"]
+      },
+      {
+        "subTitle": "Split user story by user’s alternatives",
+
+        "subContent": ["Checking account", "Savings account", "Line of credit"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 15,
+    "ppt": "Scrum Best Practices-slide-19",
+    "title": "Split User Stories by Type/Alternative",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Create an account"]
+      },
+      {
+        "subTitle": "Split user story by user object life cycle activities",
+
+        "subContent": ["Create account", "Make deposit", "Withdraw money"]
+      },
+      {
+        "subTitle": "General pattern: CRUD",
+
+        "subContent": ["Create", "Read", "Update", "delete"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 16,
+    "ppt": "Scrum Best Practices-slide-20",
+    "title": "Split User Stories by Convenience Level ",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Create an account"]
+      },
+      {
+        "subTitle": "Split user story by user convenience level",
+
+        "subContent": [
+          "Enter data without/with autofill",
+          "Type in data vs. select from menu",
+          "Basic UI vs. “cool” UI",
+          "Manual vs. automation, e.g. decision making"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 17,
+    "ppt": "Scrum Best Practices-slide-21",
+    "title": "Split User Stories by Typicality ",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Create an account"]
+      },
+      {
+        "subTitle": "Split user story by typical vs. less typical user behavior/choice",
+
+        "subContent": [
+          "Type of user: novice; occasional; expert",
+          "Single account owner vs. shared account"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 18,
+    "ppt": "Scrum Best Practices-slide-22",
+    "title": "Split User Stories by Base/Extension ",
+    "content": [
+      {
+        "subTitle": "Example: banking application",
+
+        "subContent": ["Travel application"]
+      },
+      {
+        "subTitle": "Split user story by base case(s) vs. extended case(s)        ",
+
+        "subContent": [
+          "-Base cases: ",
+          "book flight",
+          "Rent car",
+          "Book hotel",
+          "-Extended cases:",
+          "Book flight and rent car",
+          "Book flight and book hotel",
+          "Rent car and book hotel",
+          "Book flight,rent car,and book hotel"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 19,
+    "ppt": "Scrum Best Practices-slide-23",
+    "title": "Split User Stories:  What Not to Do",
+    "content": [
+      {
+        "subTitle": "Guiding principle:",
+
+        "subContent": [
+          "Each user story describes something of value to the user"
+        ]
+      },
+      {
+        "subTitle": "Anti-Patterns for Splitting User Stories (avoid)",
+
+        "subContent": [
+          "Split by architecture component: Front end vs. backend, UI vs. “internal processing”",
+          "Split by function vs. other critical qualities Security (non-encrypted passwords): Data protection (user permissions based on user roles)"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 20,
+    "ppt": "Scrum Best Practices-slide-24",
+    "title": "More Tips for Effective Scrum",
+    "content": [
+      {
+        "subTitle": "Have a defined team room",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Have Stand-up meeting at the same time and place every time, preferably in the team room  ",
+
+        "subContent": [
+          "Makes regular updating of Scrum Board and Burn chart more likely"
+        ]
+      },
+      {
+        "subTitle": "Enforce working agreements",
+
+        "subContent": ["Meeting attendance, task status updating, …"]
+      },
+      {
+        "subTitle": "Post the Three Questions in BIG LETTERS ",
+
+        "subContent": [
+          "Scrum Master should listen for impediments and issues needing follow-up (not ask the three questions)"
+        ]
+      },
+      {
+        "subTitle": "If you use Scrum project management software, use a Scrum Board to track progress anyway.",
+
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 21,
+    "ppt": "Scrum Best Practices-slide-25",
+    "title": "Agile Myths and Scrum Smells and Plagues",
+    "content": [
+      {
+        "subTitle": "Understanding problems when first using Scrum",
+
+        "subContent": [
+          "As a beginning practitioner of Scrum",
+          "I need to understand what can go wrong when a team is new to Scrum",
+          "So I can identify and remove obstacles to successful Scrum adoption"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 22,
+    "ppt": "Scrum Best Practices-slide-26",
+    "title": "Common Agile Myths (really: Misunderstandings)  ",
+    "content": [
+      {
+        "subTitle": "",
+
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 23,
+    "ppt": "Scrum Best Practices-slide-27",
+    "title": "What are Scrum Smells?",
+    "content": [
+      {
+        "subTitle": "“Whiffs”, odors that may not seem so bad at first but over time become overwhelming (so you must get rid of them) ",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Easy to ignore at first;better get rid of it right away.",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Ignore scrum smells at your own peril!",
+
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+
+  {
+    "id": 24,
+    "ppt": "Scrum Best Practices-slide-28",
+    "title": "Common Scrum Smells",
+    "content": [
+      {
+        "subTitle": "Zero or > 1 Product Owners",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "The Scrum Task Master",
+
+        "subContent": [
+          "As opposed to Scrum Master: coach,  mentor, facilitator, protector"
+        ]
+      },
+      {
+        "subTitle": "Commitment Phobia",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Self-unmanaged teams",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Burn-ups/downs that don’t",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Urgent things crowd out important things",
+
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 25,
+    "ppt": "Scrum Best Practices-slide-29",
+    "title": "Important/Urgent: Covey’s Quadrant",
+    "content": [
+      {
+        "subTitle": "Important:",
+
+        "subContent": ["contributes to achievement of (important) goals "]
+      },
+      {
+        "subTitle": "Urgent:",
+
+        "subContent": ["requires immediate attention"]
+      },
+      {
+        "subTitle": "Commitment Phobia",
+
+        "subContent": []
+      },
+      {
+        "subTitle": "Examples for Quadrants",
+
+        "subContent": [
+          "Q1: Finish homework before deadline",
+          "Q2: Improve programming skills",
+          "Q3: Answering phone",
+          "Q4: Playing video game"
+        ]
+      }
+    ],
+
+    "image": [{ "url": "/4.png" }]
+  },
+  {
+    "id": 26,
+    "ppt": "Scrum Best Practices-slide-31",
+    "title": "Engineering Product and Process",
+    "content": [
+      {
+        "subTitle": "Start with a coherent vision and a realistic plan",
+
+        "subContent": ["Begin with the end in mind"]
+      },
+      {
+        "subTitle": "Continuous improvement",
+
+        "subContent": ["Requires measures for process and product"]
+      },
+      {
+        "subTitle": "Focus on quality to increase productivity",
+
+        "subContent": [
+          "If now is not the time to do it right, when will you find the time to do it again"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 27,
+    "ppt": "Scrum Best Practices-slide-32",
+    "title": "Avoid Flaccid Scrum ",
+    "content": [
+      {
+        "subTitle": "Flaccid Scrum (Martin Fowler)",
+
+        "subContent": [
+          "Scrum project management practices",
+          "Without technic software engineering practices"
+        ]
+      },
+      {
+        "subTitle": "Leads to inferior software quality …",
+
+        "subContent": ["Technical debt build-up …"]
+      },
+      {
+        "subTitle": "and diminishing productivity",
+
+        "subContent": ["will slow team over time"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 28,
+    "ppt": "Scrum Best Practices-slide-33",
+    "title": "Technical Practices within Scrum",
+    "content": [
+      {
+        "subTitle": "Flaccid Scrum (Martin Fowler)",
+
+        "subContent": [
+          "Scrum project management practices",
+          "Without technic software engineering practices"
+        ]
+      },
+      {
+        "subTitle": "Many borrowed from XP (eXtreme Programming)",
+
+        "subContent": [
+          "Done Criteria",
+          "Peer review / Pair Programming",
+          "Clean code",
+          "TFD (test-first development)/TDD (test-driven development)",
+          "Continuous integration",
+          "Version Control",
+          "Test coverage criteria",
+          "Static Analysis Tools"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 29,
+    "ppt": "Scrum Best Practices-slide-34",
+    "title": "There Is No “I” in TEAM",
+    "content": [
+      {
+        "subTitle": "Shared product vision",
+
+        "subContent": ["Team members need to share a common product vision"]
+      },
+      {
+        "subTitle": "Consensus",
+
+        "subContent": [
+          "Product/Release backlog",
+          "Sprint goal and backlog ",
+          "Level of effort estimation :1.User stories in story points 2. Sprint tasks in ideal working hours"
+        ]
+      },
+      {
+        "subTitle": "Joint responsibility",
+
+        "subContent": [
+          "Release plan",
+          "Sprint plan",
+          "Sprint report",
+          "Scrum practices (stand-up, planning meetings, sprint post mortem)"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 30,
+    "ppt": "Scrum Best Practices-slide-35",
+    "title": "There is nothing but “I”s in TEAM",
+    "content": [
+      {
+        "subTitle": "“It’s not my job” ",
+
+        "subContent": [
+          "Only if that job is already done or being done by somebody else"
+        ]
+      },
+      {
+        "subTitle": "Each team member responsible for reaching team goal",
+
+        "subContent": [
+          "Proactive in committing to tasks",
+          "Diligent in completing tasks committed to",
+          "Willing to ask for and accept help when needed",
+          "Willing to offer and provide help when needed"
+        ]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 31,
+    "ppt": "Scrum Best Practices-slide-36",
+    "title": "The four agreements of the Toltec way of life  ",
+    "content": [
+      {
+        "subTitle": "Be impeccable with your word.",
+        "subContent": []
+      },
+      {
+        "subTitle": "Don’t take anything personally. ",
+        "subContent": []
+      },
+      {
+        "subTitle": "Don’t make assumptions",
+        "subContent": []
+      },
+      {
+        "subTitle": "Always do your best",
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-8",
+    "title": "What is Clean Code?",
+    "content": [],
+
+    "image": [{ "url": "/5.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-9",
+    "title": "why Clean Code?",
+    "content": [],
+
+    "image": [{ "url": "/6.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-10",
+    "title": "Getting to Clean Code",
+    "content": [],
+
+    "image": [{ "url": "/7.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-11",
+    "title": "Team Working Agreements",
+    "content": [
+      {
+        "subTitle": "Definition of Done",
+        "subContent": []
+      },
+      {
+        "subTitle": "Acceptance Criteria",
+        "subContent": []
+      },
+      {
+        "subTitle": "Coding Standard/Style guide",
+        "subContent": []
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-12",
+    "title": "Coding Standard",
+    "content": [],
+
+    "image": [{ "url": "/8.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-13",
+    "title": "Criteria for Good Coding Standard",
+    "content": [
+      {
+        "subTitle": "Clarifies rather than obfuscates",
+        "subContent": []
+      },
+      {
+        "subTitle": "Makes programs read naturally",
+        "subContent": []
+      },
+      {
+        "subTitle": "Encourages best coding practices",
+        "subContent": [
+          "Ease of reading and understanding is more important than ease of writing/”clever coding”"
+        ]
+      },
+      {
+        "subTitle": "Promotes intention-revealing code",
+        "subContent": ["Names"]
+      }
+    ],
+
+    "image": []
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-14",
+    "title": "Some Clean Code Heuristics",
+    "content": [],
+
+    "image": [{ "url": "/9.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-15",
+    "title": "No Duplication (DRY: Don’t Repeat Yourself) (1)",
+    "content": [
+      {
+        "subTitle": "Refactor code, e.g.abstract common code block into separate function(method)",
+        "subContent": []
+      },
+      {
+        "subTitle": "Two separate implementations: ",
+        "subContent": ["duplicates semantics of empty collection"]
+      },
+      {
+        "subTitle": "makes dependency explicit",
+        "subContent": []
+      }
+    ],
+
+    "image": [{ "url": "" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-18",
+    "title": "Replace magic numbers with named constants",
+    "content": [
+      {
+        "subTitle": "Use meaningful constant names instead of constant literals",
+        "subContent": []
+      },
+      {
+        "subTitle": "Use meaningful variable names instead of generic names",
+        "subContent": []
+      },
+      {
+        "subTitle": "Encapsulate Expressions in Boundary Conditions",
+        "subContent": []
+      }
+    ],
+
+    "image": [{ "url": "" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-21",
+    "title": "Programming by Intention",
+    "content": [
+      {
+        "subTitle": "Break up long method by abstracting pieces into separate functions (methods)",
+        "subContent": []
+      },
+      {
+        "subTitle": "Makes code understandable at a higher level of abstraction",
+        "subContent": []
+      },
+      {
+        "subTitle": "Clear context for variables: attributes of new class",
+        "subContent": []
+      },
+      {
+        "subTitle": "New method names capture key semantics in application-specific terms",
+        "subContent": []
+      },
+      {
+        "subTitle": "Definition of new abstractions",
+        "subContent": []
+      }
+    ],
+
+    "image": [{ "url": "" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-27",
+    "title": "Routine/Function/Procedure/Method Names",
+    "content": [
+      {
+        "subTitle": "Aim for high cohesion and loose coupling",
+        "subContent": []
+      }
+    ],
+
+    "image": [{ "url": "/11.png" }]
+  },
+  {
+    "id": 31,
+    "ppt": "Agile Clean Code and Simple Design-slide-28",
+    "title": "Managing Complexity",
+    "content": [
+      {
+        "subTitle": "High Cohesion",
+        "subContent": [
+          "Components of a composite entity (class, object)",
+          "Have high cohesion",
+          "If the components tend to occur together in most contexts"
+        ]
+      },
+      {
+        "subTitle": "Loose Coupling",
+        "subContent": [
+          "Components are loosely coupled",
+          "If there are few dependencies between the components"
+        ]
+      }
+    ],
+
+    "image": [{ "url": "" }]
+  }
+]
