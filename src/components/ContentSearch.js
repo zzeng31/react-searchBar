@@ -5,16 +5,13 @@ import Button from "./Button";
 import styles from "./ContentSearch.module.css";
 
 const CourseInput = (props) => {
-  const [enteredValue, setEnteredValue] = useState("");
-  const commonWords = ["and", "or", "the", "of"];
+  const commonWords = ["and", "or", "the", "of", "to", "in", "for"];
   const [isValid, setIsValid] = useState(true);
   const [filter, setFilter] = useState([]);
-  // const [match, setMatch] = useState(0);
+
   const [search, setSearch] = useState("");
   const inputChangeHandler = (event) => {
     setSearch(event.target.value);
-    // console.log(`search:${search}`);
-    // console.log(`items:`, props.items);
   };
   const resetHandler = () => {
     window.location.reload(false);
@@ -22,34 +19,16 @@ const CourseInput = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-
+    //Formating search array
     const searchArr = search
       .split(" ")
       .filter(
         (val) =>
           val.length > 0 && !commonWords.some((c) => c === val.toLowerCase())
-      );
-    console.log("search:", searchArr);
+      )
+      .map((val) => val.toLowerCase());
 
-    // const filteredSearch = props.items.filter((value) => {
-    //   return (
-    //     searchArr.some((s) => {
-    //       return value.title.toLowerCase().includes(s.toLowerCase());
-    //     }) ||
-    //     searchArr.some((s) => {
-    //       return value.content.some((sub) => {
-    //         return sub.subTitle.toLowerCase().includes(s.toLowerCase());
-    //       });
-    //     }) ||
-    //     searchArr.some((s) => {
-    //       return value.content.some((sub) => {
-    //         return sub.subContent.some((subContent) => {
-    //           return subContent.toLowerCase().includes(s.toLowerCase());
-    //         });
-    //       });
-    //     })
-    //   );
-    // });
+    //Set filtered results
     const filteredSearch = props.items.filter((value) => {
       return searchArr.some((s) => {
         return (
@@ -65,10 +44,38 @@ const CourseInput = (props) => {
         );
       });
     });
-    setFilter(filteredSearch);
-    props.setDataContent(filteredSearch);
+    console.log(`searched:${searchArr}`);
+    //Sort filtered results by frequency
+    const freQuencyFilteredSearch = filteredSearch
+      .map((value) => {
+        let matched = 0;
+        //flatten whole object into string
+        const content = value.title
+          .toLowerCase()
+          .concat(
+            value.content.reduce((str, val) => {
+              return str
+                .concat(val.subTitle)
+                .concat(
+                  val.subContent.reduce((str, val) => str.concat(val), "")
+                );
+            }, "")
+          )
+          .toLowerCase();
+        //count matching search words
+        for (const word of searchArr) {
+          if (content.includes(word)) {
+            matched++;
+          }
+        }
+        value.frequency = matched;
+        return value;
+      })
+      .sort((a, b) => b.frequency - a.frequency); //sort with decreasing freqency
+    console.log(freQuencyFilteredSearch);
+    setFilter(freQuencyFilteredSearch);
+    props.setDataContent(freQuencyFilteredSearch);
     props.setSearchWord(searchArr);
-    console.log("filter", filteredSearch);
   };
 
   return (
